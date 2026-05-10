@@ -6,12 +6,12 @@ import datetime
 class Equipement:
     """Modélise un équipement réseau générique."""
 
-    _nb_equipements = 0  # attribut de classe (Exercise 2)
+    _nb_equipements = 0  # attribut de classe 
 
     def __init__(self, nom, marque, adresse_ip):
         self.nom = nom
         self.marque = marque
-        self.adresse_ip = adresse_ip  # appelle le setter
+        self.adresse_ip = adresse_ip  
         self.est_actif = False
         Equipement._nb_equipements += 1
 
@@ -76,7 +76,7 @@ class Routeur(Equipement):
     def __init__(self, nom, marque, adresse_ip, nb_interfaces):
         super().__init__(nom, marque, adresse_ip)
         self.nb_interfaces = nb_interfaces
-        self.table_routage = []  # liste de routes ex: "192.168.1.0/24"
+        self.table_routage = []  
 
     def ajouter_route(self, reseau):
         """Ajoute une route à la table de routage."""
