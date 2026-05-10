@@ -6,7 +6,7 @@ import datetime
 class Equipement:
     """Modélise un équipement réseau générique."""
 
-    _nb_equipements = 0  # attribut de classe 
+    _nb_equipements = 0  
 
     def __init__(self, nom, marque, adresse_ip):
         self.nom = nom
