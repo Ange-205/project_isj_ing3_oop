@@ -69,3 +69,47 @@ class Equipement:
 
     def __repr__(self):
         return f"Equipement(nom='{self.nom}', ip='{self._adresse_ip}')"
+class Routeur(Equipement):
+    """Modélise un routeur réseau avec table de routage."""
+
+    def __init__(self, nom, marque, adresse_ip, nb_interfaces):
+        super().__init__(nom, marque, adresse_ip)
+        self.nb_interfaces = nb_interfaces
+        self.table_routage = [] 
+
+    def ajouter_route(self, reseau):
+        """Ajoute une route à la table de routage."""
+        if reseau not in self.table_routage:
+            self.table_routage.append(reseau)
+            print(f"[ROUTEUR] Route {reseau} ajoutée sur {self.nom}.")
+        else:
+            print(f"[ROUTEUR] Route {reseau} déjà présente.")
+
+    def supprimer_route(self, reseau):
+        """Supprime une route de la table de routage."""
+        if reseau in self.table_routage:
+            self.table_routage.remove(reseau)
+            print(f"[ROUTEUR] Route {reseau} supprimée.")
+        else:
+            print(f"[ROUTEUR] Route {reseau} introuvable.")
+
+    def afficher_infos(self):
+        """Affiche les infos du routeur, y compris la table de routage."""
+        super().afficher_infos()
+        print(f"  Interfaces : {self.nb_interfaces}")
+        print(f"  Table de routage ({len(self.table_routage)} routes) :")
+        if self.table_routage:
+            for route in self.table_routage:
+                print(f"    -> {route}")
+        else:
+            print("    (vide)")
+
+    def diagnostiquer(self):
+        """Étend le diagnostic avec les infos spécifiques au routeur."""
+        diag = super().diagnostiquer()
+        diag["nb_interfaces"] = self.nb_interfaces
+        diag["nb_routes"] = len(self.table_routage)
+        return diag
+
+    def __repr__(self):
+        return f"Routeur(nom='{self.nom}', ip='{self._adresse_ip}', interfaces={self.nb_interfaces})"
