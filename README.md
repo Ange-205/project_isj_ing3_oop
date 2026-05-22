@@ -155,12 +155,11 @@ Année académique 2025-2026 · Semestre 2
    **main.py** 
    this will take you to an interactive menu
 
-**Group Members**
-|**MEMBER**|                
-|EKANJE VANESSA EWOSE|	        
-|ALOBWEDE LESNAR AHONE |  	   
-|BAYI NGANTCHEU ANGE FRANKA|	  
-|TSOFACK NGUE SOREL YVANA|	    
+**Group Members**               
+EKANJE VANESSA EWOSE 	        
+ALOBWEDE LESNAR AHONE  	   
+BAYI NGANTCHEU ANGE FRANKA  
+TSOFACK NGUE SOREL YVANA 	    
 
 
    
