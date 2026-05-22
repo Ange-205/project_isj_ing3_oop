@@ -11,7 +11,7 @@ class Equipement:
     def __init__(self, nom, marque, adresse_ip):
         self.nom = nom
         self.marque = marque
-        self.adresse_ip = adresse_ip  
+        self.adresse_ip = adresse_ip 
         self.est_actif = False
         Equipement._nb_equipements += 1
 
@@ -69,14 +69,13 @@ class Equipement:
 
     def __repr__(self):
         return f"Equipement(nom='{self.nom}', ip='{self._adresse_ip}')"
-    
 class Routeur(Equipement):
     """Modélise un routeur réseau avec table de routage."""
 
     def __init__(self, nom, marque, adresse_ip, nb_interfaces):
         super().__init__(nom, marque, adresse_ip)
         self.nb_interfaces = nb_interfaces
-        self.table_routage = []  
+        self.table_routage = [] 
 
     def ajouter_route(self, reseau):
         """Ajoute une route à la table de routage."""
