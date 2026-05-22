@@ -69,21 +69,13 @@ class Equipement:
 
     def __repr__(self):
         return f"Equipement(nom='{self.nom}', ip='{self._adresse_ip}')"
-<<<<<<< HEAD
-=======
-    
->>>>>>> aa1d2c9ac2f4f30297f2ea21f4c2b06ce5f38cae
 class Routeur(Equipement):
     """Modélise un routeur réseau avec table de routage."""
 
     def __init__(self, nom, marque, adresse_ip, nb_interfaces):
         super().__init__(nom, marque, adresse_ip)
         self.nb_interfaces = nb_interfaces
-<<<<<<< HEAD
         self.table_routage = [] 
-=======
-        self.table_routage = []  
->>>>>>> aa1d2c9ac2f4f30297f2ea21f4c2b06ce5f38cae
 
     def ajouter_route(self, reseau):
         """Ajoute une route à la table de routage."""
@@ -120,9 +112,6 @@ class Routeur(Equipement):
         return diag
 
     def __repr__(self):
-<<<<<<< HEAD
-        return f"Routeur(nom='{self.nom}', ip='{self._adresse_ip}', interfaces={self.nb_interfaces})"
-=======
         return f"Routeur(nom='{self.nom}', ip='{self._adresse_ip}', interfaces={self.nb_interfaces})"
     
 class Switch(Equipement):
@@ -457,4 +446,3 @@ class Firewall(Equipement, Authentifiable, Journalisable):
     def __repr__(self):
         return f"Firewall(nom='{self.nom}', ip='{self._adresse_ip}')"
     
->>>>>>> aa1d2c9ac2f4f30297f2ea21f4c2b06ce5f38cae
