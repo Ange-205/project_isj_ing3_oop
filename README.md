@@ -2,15 +2,7 @@
 
 > Projet de groupe — Programmation Orientée Objet en Python
 > **INGÉNIEUR 3 SRT** · Institut Saint Jean · Année académique 2025-2026
-
----
-
 ## Description
-
-Ce dépôt est le point de départ officiel du projet **SIMNet**, donné aux étudiants
-de 3ème année Génie Télécom & Réseaux dans le cadre du cours de Programmation Orientée
-Objet en Python.
-
 **SIMNet** est un simulateur de réseau d'entreprise entièrement orienté objet. Il permet
 de modéliser une topologie réseau, de faire circuler des paquets entre équipements,
 d'en assurer la sécurité via un firewall, et d'en superviser le fonctionnement grâce
@@ -118,20 +110,6 @@ dépôt officiel `st9-8/project_isj_ing3_oop`.
 | `group_5` | — | — |
 
 > Ce tableau sera mis à jour par l'examinateur au démarrage du projet.
-
----
-
-## Évaluation
-
-| Critère | Points |
-|---------|--------|
-| Fonctionnement du simulateur | 6 |
-| Qualité de la modélisation POO | 5 |
-| Couverture des concepts du cours | 4 |
-| Rapport technique | 3 |
-| Soutenance et maîtrise individuelle | 2 |
-| **Total** | **20** |
-
 ---
 
 ##  Examinateur
@@ -139,3 +117,50 @@ dépôt officiel `st9-8/project_isj_ing3_oop`.
 **M. Stephane Fedim**  
 Institut Saint Jean - Parcours Ingénieur
 Année académique 2025-2026 · Semestre 2
+
+**FEATURES IMPLEMENTED**
+1. Equipement Mangement
+   -creation of network devices
+   -Equipement inheritance Hierarchy
+   -Specific device behaviors
+2. Topology Mangement
+   -Add and remove devices in a network
+   -add and remove links
+   -network representation using adjacency lists
+3. Packet Transmission
+   -Packet Creation
+   -Packet transmission and forwarding
+   -Simulation of Routing
+   -Hop-by-hop packet movement
+4. Security System
+   -Firewall Filtering
+   -Packet blocking and authorization
+   -Management of security rules
+   -Recording and logging blocked packets
+5. Monitoring System
+   -Traffic statistics
+   -Activity records
+   -Report and log generation
+   -Packet counters
+6. Interactive Menu
+   -Use interaction based menu
+   -Dynamic network simulation
+
+**Execution Instructions**
+1. Clone the repository
+   git clone https://github.com/Ange-205/project_isj_ing3_oop
+2. Navigate to the project folder
+   **cd src**
+3. Run the simulator on python or visual Studio
+   **main.py** 
+   this will take you to an interactive menu
+
+**Group Members**               
+EKANJE VANESSA EWOSE 	        
+ALOBWEDE LESNAR AHONE  	   
+BAYI NGANTCHEU ANGE FRANKA  
+TSOFACK NGUE SOREL YVANA 	    
+
+
+   
+   
