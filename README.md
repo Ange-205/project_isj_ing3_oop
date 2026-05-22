@@ -150,17 +150,17 @@ Année académique 2025-2026 · Semestre 2
 1. Clone the repository
    git clone https://github.com/Ange-205/project_isj_ing3_oop
 2. Navigate to the project folder
-   cd src
+   **cd src**
 3. Run the simulator on python or visual Studio
-   main.py
+   **main.py** 
    this will take you to an interactive menu
 
 **Group Members and Roles**
-**MEMBER**	                  **ROLE**
-EKANJE VANESSA EWOSE	        equipment.py
-ALOBWEDE LESNAR AHONE   	    topology.py
-BAYI NGANTCHEU ANGE FRANKA	  packet.py + main.py
-TSOFACK NGUE SOREL YVANA	    security.py + monitor.py 
+|**MEMBER**	 |                 |**ROLE**|
+|EKANJE VANESSA EWOSE|	        |equipment.py|
+|ALOBWEDE LESNAR AHONE |  	   | topology.py|
+|BAYI NGANTCHEU ANGE FRANKA|	  |packet.py + main.py|
+|TSOFACK NGUE SOREL YVANA|	    |security.py + monitor.py |
 
 
    
