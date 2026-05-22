@@ -1,6 +1,3 @@
-class test_equipement:
-    def __init__(self,name):
-        self.name=name
 class Link:
     def __init__(self,equipement1,equipement2,bandwidth,latency):
         self.equipement1=equipement1
@@ -57,11 +54,3 @@ class topology:
             if link.equipement1==equipement or \
                 link.equipement2==equipement:
                 self.links.remove(link)
-r1=test_equipement('router')
-s2=test_equipement('switch') 
-l1=Link(r1, s2, 100, 10)    
-print(l1.latency)
-topo=topology()
-r1=test_equipement('router')
-topo.add_equipement(s2)
-print(topo.equipements)
