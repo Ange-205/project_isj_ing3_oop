@@ -447,19 +447,3 @@ class Firewall(Equipement, Authentifiable, Journalisable):
     def __repr__(self):
         return f"Firewall(nom='{self.nom}', ip='{self._adresse_ip}')"
     
-if __name__ == "__main__":
-    # Test rapide de toutes les classes
-    r = Routeur("R1", "Cisco", "192.168.1.1", 4)
-    r.activer()
-    r.ajouter_route("10.0.0.0/8")
-    r.afficher_infos()
-
-    fw = Firewall("FW1", "FortiNet", "192.168.1.254", "admin", "s3cr3t")
-    fw.activer()
-    if fw.authentifier("admin", "s3cr3t"):
-        fw.ajouter_regle("DENY TCP FROM 0.0.0.0 TO PORT 23")
-    fw.afficher_infos()
-    fw.afficher_journal()
-
-    print(f"\nNombre total d'équipements créés : {Equipement.get_nb_equipements()}")
-    print(f"\nMRO du Firewall : {Firewall.__mro__}")
