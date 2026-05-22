@@ -130,7 +130,7 @@ class Simulateur:
             print(f"  [X] Destination INATTEIGNABLE : {paquet.destination}")
             return self._echec(paquet, "PERDU")
 
-        noms_chemin = [eq.name for eq in chemin]
+        noms_chemin = [eq.nom for eq in chemin]
         print(f"\n  Chemin : {' -> '.join(noms_chemin)}")
 
         # Etape 3 et 4 — traverser saut par saut
@@ -144,7 +144,7 @@ class Simulateur:
             lien = self._get_lien(equip_actuel, equip_suivant)
             if lien:
                 temps_transit     += lien.latency
-                print(f"  [{i+1}] {equip_actuel.name} -> {equip_suivant.name} "
+                print(f"  [{i+1}] {equip_actuel.nom} -> {equip_suivant.nom} "
                       f"[{lien.bandwidth} Mbps / {lien.latency} ms]")
 
             # Etape 4 — verifier si l'equipement suivant est un Firewall
