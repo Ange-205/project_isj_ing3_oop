@@ -156,7 +156,7 @@ Année académique 2025-2026 · Semestre 2
    this will take you to an interactive menu
 
 **Group Members**
-|**MEMBER**	 |                 
+|**MEMBER**|                
 |EKANJE VANESSA EWOSE|	        
 |ALOBWEDE LESNAR AHONE |  	   
 |BAYI NGANTCHEU ANGE FRANKA|	  
