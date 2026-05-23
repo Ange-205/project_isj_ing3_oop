@@ -29,7 +29,8 @@ class topology:
         visits.append(start)
         parents[start]=None
         while queue:
-            current=queue.pop(0)
+            current=queue[0]
+            del queue
             if current == destination:
                 route = []
                 actual = destination
