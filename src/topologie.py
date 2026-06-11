@@ -30,7 +30,7 @@ class topology:
         parents[start]=None
         while queue:
             current=queue[0]
-            del queue
+            del queue[0]
             if current == destination:
                 route = []
                 actual = destination
