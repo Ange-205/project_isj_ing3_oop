@@ -325,8 +325,8 @@ class Authentifiable:
     """Mixin ajoutant la capacité d'authentification par login/mot de passe."""
 
     def __init__(self, login, mot_de_passe):
-        self.__login = login
-        self.__mot_de_passe = mot_de_passe
+        self.login = login
+        self.mot_de_passe = mot_de_passe
 
     def authentifier(self, login, mdp):
         """Vérifie les identifiants et retourne True si corrects, False sinon."""
